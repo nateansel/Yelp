@@ -18,16 +18,21 @@ class BusinessListViewController: UIViewController {
 	
 	var businesses: [Business] = []
 	
+	override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		navigationItem.titleView = searchBar
 		searchBar.placeholder = "Search"
 		searchBar.delegate = self
+		searchBar.showsCancelButton = true
 		navigationController?.navigationBar.backgroundColor = .red
 		navigationController?.navigationBar.barTintColor = .red
+		navigationController?.navigationBar.tintColor = .white
 		
 		tableView.dataSource = self
 		tableView.refreshControl = refreshControl
+		tableView.keyboardDismissMode = .onDrag
 		refreshControl.addTarget(self, action: #selector(refreshControlActivated), for: .valueChanged)
 		refreshControl.beginRefreshing()
 		refreshControlActivated()
