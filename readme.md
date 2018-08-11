@@ -31,7 +31,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='hhttps://github.com/nateansel/Yelp/blob/master/week3.gif' title='Video Walkthrough' width='300px' alt='Video Walkthrough'/>
+<img src='https://github.com/nateansel/Yelp/blob/master/week3.gif' title='Video Walkthrough' width='300px' alt='Video Walkthrough'/>
 
 GIF created with [Gifox](https://gifox.io).
 
